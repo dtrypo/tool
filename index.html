@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+        integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div style="display: flex;">
+            <div>
+                <label for="skill">Ιδικότητα</label>
+                <select name="skill" id="skill">
+                    <option value="6">Σερβιτόροι</option>
+                    <option value="15">Bartender</option>
+                    <option value="4">Barista - Μπουφέ</option>
+                    <option value="9">Πωλητές - Ταμίες</option>
+                    <option value="1">Delivery</option>
+                    <option value="2">Μάγειρες</option>
+                    <option value="3">Ψήστες - Παρασκευαστές</option>
+                    <option value="8">Υποδοχή - Μετρ</option>
+                    <option value="13">Κομμωτική</option>
+                    <option value="14">Αισθητική</option>
+                    <option value="10">Τηλεφωνικό Κέντρο</option>
+                    <option value="18">Υπάλληλοι Γραφείου</option>
+                    <option value="12">Ρεσεψιόν</option>
+                    <option value="11">Καμαριέρα</option>
+                    <option value="7">Αρτοποιοί</option>
+                    <option value="5">Λάντζα</option>
+                    <option value="20">Αποθηκάριοι</option>
+                    <option value="21">Οδηγοί</option>
+                    <option value="19">Καθαρισμός</option>
+                    <option value="16">Άλλο</option>
+                </select>
+                <label for="location">Νομός</label>
+                <select name="location" id="location">
+                        <option value="56">Ν. ΠΙΕΡΙΑΣ</option>
+                        <option value="57">Ν. ΔΥΤΙΚΗΣ ΑΤΤΙΚΗΣ</option>
+                        <option value="58">Ν.ΙΩΑΝΝΙΝΩΝ</option>
+                        <option value="59">Ν. ΠΕΛΛΑΣ</option>
+                        <option value="60">Ν. ΕΥΡΥΤΑΝΙΑΣ</option>
+                        <option value="61">Ν. ΦΩΚΙΔΑΣ</option>
+                        <option value="62">Ν. ΠΙΕΡΙΑΣ</option>
+                        <option  value="62">Ν. ΑΙΤΩΛΟΑΚΑΡΝΑΝΙΑΣ
+                            </option>
+                        <option  value="63">Ν. ΛΑΡΙΣΑΣ
+                            </option>
+                        <option  value="64">Ν. ΛΑΚΩΝΙΑΣ
+                            </option>
+                        <option  value="65">Ν. ΗΡΑΚΛΕΙΟΥ
+                            </option>
+                        <option  value="66">Ν. ΕΒΡΟΥ
+                            </option>
+                        <option  value="67">Ν. ΣΑΜΟΥ
+                            </option>
+                        <option  value="68">Ν. ΠΕΙΡΑΙΩΣ ΚΑΙ ΝΗΣΩΝ
+                            </option>
+                        <option  value="69">Ν. ΧΑΛΚΙΔΙΚΗΣ
+                            </option>
+                        <option  value="70">Ν. ΣΕΡΡΩΝ
+                            </option>
+                        <option  value="71">Ν. ΚΟΖΑΝΗΣ
+                            </option>
+                        <option  value="72">Ν. ΗΜΑΘΙΑΣ
+                            </option>
+                        <option  value="73">Ν. ΦΘΙΩΤΙΔΑΣ
+                            </option>
+                        <option  value="74">Ν. ΦΛΩΡΙΝΑΣ
+                            </option>
+                        <option  value="75">Ν. ΧΙΟΥ
+                            </option>
+                        <option  value="76">Ν. ΑΧΑΪΑΣ
+                            </option>
+                        <option  value="77">Ν. ΠΡΕΒΕΖΑΣ
+                            </option>
+                        <option  value="78">Ν. ΕΥΒΟΙΑΣ
+                            </option>
+                        <option  value="79">Ν. ΛΕΥΚΑΔΑΣ
+                            </option>
+                        <option  value="80">Ν. ΓΡΕΒΕΝΩΝ
+                            </option>
+                        <option  value="81">Ν. ΑΘΗΝΩΝ
+                            </option>
+                        <option  value="82">Ν. ΑΝΑΤΟΛΙΚΗΣ ΑΤΤΙΚΗΣ
+                            </option>
+                        <option  value="83">Ν. ΚΕΦΑΛΛΟΝΙΑΣ
+                            </option>
+                        <option  value="84">Ν. ΡΟΔΟΠΗΣ
+                            </option>
+                        <option  value="85">Ν. ΡΕΘΥΜΝΟΥ
+                            </option>
+                        <option  value="86">Ν. ΜΑΓΝΗΣΙΑΣ
+                            </option>
+                        <option  value="87">Ν. ΚΟΡΙΝΘΟΥ
+                            </option>
+                        <option  value="88">Ν. ΧΑΝΙΩΝ
+                            </option>
+                        <option  value="89">Ν. ΛΕΣΒΟΥ
+                            </option>
+                        <option  value="90">Ν. ΑΡΚΑΔΙΑΣ
+                            </option>
+                        <option  value="91">Ν. ΚΑΣΤΟΡΙΑΣ
+                            </option>
+                        <option  value="92">Ν. ΖΑΚΥΝΘΟΥ
+                            </option>
+                        <option  value="93">Ν. ΔΡΑΜΑΣ
+                            </option>
+                        <option  value="94">Ν. ΚΥΚΛΑΔΩΝ
+                            </option>
+                        <option  value="95">Ν. ΒΟΙΩΤΙΑΣ
+                            </option>
+                        <option  value="96">Ν. ΛΑΣΙΘΙΟΥ
+                            </option>
+                        <option  value="97">Ν. ΑΡΓΟΛΙΔΑΣ
+                            </option>
+                        <option  value="98">Ν. ΚΑΒΑΛΑΣ
+                            </option>
+                        <option  value="99">Ν. ΗΛΕΙΑΣ
+                            </option>
+                    </select>
+                <a href="#" onclick="formSub()">submit</a>
+            </div>
+            <div style="display: flex;">
+                <div>
+                    <canvas id="myChart" width="400" height="400" style="max-width: 400px; height: 400px;"></canvas>
+                </div>
+                <div>
+                    <canvas id="myChart2" width="400" height="400" style="max-width: 400px; height: 400px;"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>
