@@ -15,12 +15,23 @@ function formSub() {
             })
             .then(function (stats) {
                 console.log(stats);
-                labels = stats.age_dist.labels;
-                data = stats.age_dist.values;
-                x = stats.xp_dist.labels;
-                y = stats.xp_dist.values;
-                charts();
-                chart2();
+                if (!stats.found_js_pop) {
+                    document.getElementById("message").innerHTML = "Δεν υπάρχουν αρκετά στοιχεία για αυτή την περιοχή σας δείχνουμε στατιστικά για το πλήθος των στοιχείων που έχουμε.";
+                    labels = stats.age_dist.labels;
+                    data = stats.age_dist.values;
+                    x = stats.xp_dist.labels;
+                    y = stats.xp_dist.values;
+                    charts();
+                    chart2();
+                } else {
+                    document.getElementById("message").innerHTML = "";
+                    labels = stats.age_dist.labels;
+                    data = stats.age_dist.values;
+                    x = stats.xp_dist.labels;
+                    y = stats.xp_dist.values;
+                    charts();
+                    chart2();
+                }
             })
     }
 
